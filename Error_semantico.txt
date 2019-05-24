@@ -1,0 +1,293 @@
+----------------------------------------------------------------------
+error con String
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package minicompilador;
+
+import java.io.BufferedReader;
+import java.io.StringReader;
+import java.util.Scanner;
+
+/**
+ *
+ * @author estev
+ */
+public class Compiladores {
+
+    ;
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)  {
+        Analizador_Lexico lexico = new Analizador_Lexico(new BufferedReader(new StringReader(new Scanner(System.in).next()) {}));
+        parser sintactico = new parser(lexico);
+        String valor = 123;
+        int num = 0;
+        
+        try {
+            sintactico.parse();
+            System.out.println(sintactico.resultado);
+        } catch (Exception e) {
+            System.out.println(e.toString());
+        }
+
+    }
+
+}
+-----------------------------------------------------------------------
+error con int
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package minicompilador;
+
+import java.io.BufferedReader;
+import java.io.StringReader;
+import java.util.Scanner;
+
+/**
+ *
+ * @author estev
+ */
+public class Compiladores {
+
+    ;
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)  {
+        Analizador_Lexico lexico = new Analizador_Lexico(new BufferedReader(new StringReader(new Scanner(System.in).next()) {}));
+        parser sintactico = new parser(lexico);
+        String valor = "hola";
+        int num = 0.00;
+        
+        try {
+            sintactico.parse();
+            System.out.println(sintactico.resultado);
+        } catch (Exception e) {
+            System.out.println(e.toString());
+        }
+
+    }
+
+}
+------------------------------------------------------------------
+----------------------------------------------------------------------
+el bueno: 
+
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package minicompilador;
+
+import java.io.BufferedReader;
+import java.io.StringReader;
+import java.util.Scanner;
+
+/**
+ *
+ * @author estev
+ */
+public class Compiladores {
+
+    ;
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)  {
+        Analizador_Lexico lexico = new Analizador_Lexico(new BufferedReader(new StringReader(new Scanner(System.in).next()) {}));
+        parser sintactico = new parser(lexico);
+        String valor = "hola" ;
+        int num = 0;
+        
+        try {
+            sintactico.parse();
+            System.out.println(sintactico.resultado);
+        } catch (Exception e) {
+            System.out.println(e.toString());
+        }
+
+    }
+
+}
+--------------------------------------------------------------------
+comprobar char valor malo
+
+package javaapplication55;
+public class {
+
+char valor = 'hl'
+
+
+}
+-----------------------------------------------------
+valor bueno
+
+package javaapplication55;
+public class {
+
+char valor = 'h'
+
+
+}
+
+----------------------------------------------------------
+probar booleano
+----------------------------------------------------------
+malo
+------------------
+
+package javaapplication55;
+public void {
+
+boolean valor = 123 ;
+
+
+}
+
+--------------------------------------------------------
+bueno
+
+package javaapplication55;
+public void {
+
+boolean valor = true ;
+
+
+}
+
+-------------------------------------------------------------
+error: manejo de scope valores repetidos
+--------------------------------------------------------------
+package javaapplication55;
+public class {
+
+String valor1 = "hola";
+int valor1 = 1 ;
+
+}
+----------------------------------------------------------------
+probando if con valor correcto
+---------------------------------------------------------------
+package javaapplication55;
+public class {
+
+if ( valor1 == valor2) {
+
+
+
+}
+
+
+}
+
+--------------------------------------------------------------------
+probando c++ error en el while lexico
+--------------------------------------------------------------------
+#include<iostream>
+using namespace std;
+Int main()
+{
+    int a=0,b=0,c=0;
+    cout <<"ingrese un numero: ";cin>>a;
+    cout <<"ingrese otro numero: ";cin>>b;
+    wHile (a<=b)
+    {
+        if(a%2!=0)
+        c=c+1; a=a+1;       
+    }
+    cout<<c<<endl;
+    cin.ignore(); return 0;
+}
+-----------------------------------------------------------------
+probando error con asignacion mala de int
+----------------------------------------------------------------
+#include<iostream>
+using namespace std;
+Int main()
+{
+    int a = 0.0;
+    cout <<"ingrese un numero: ";cin>>a;
+    cout <<"ingrese otro numero: ";cin>>b;
+    while (a<=b)
+    {
+        if(a%2!=0)
+        c=c+1; a=a+1;       
+    }
+    cout<<c<<endl;
+    cin.ignore(); return 0;
+}
+--------------------------------------------------
+variables repetidas c++
+--------------------------------------------------
+
+#include<iostream>
+using namespace std;
+Int main()
+{
+    int a = 0;
+    String a = "hola";
+    cout <<"ingrese un numero: ";cin>>a;
+    cout <<"ingrese otro numero: ";cin>>b;
+    while (a<=b)
+    {
+        if(a%2!=0)
+        c=c+1; a=a+1;       
+    }
+    cout<<c<<endl;
+    cin.ignore(); return 0;
+}
+----------------------------------------------------------------
+codigo sin errores c++
+--------------------------------------------------------------
+//Codificado por: sAfOrAs
+//Codigo fuente: Secuencia de fibonacci.
+#include<iostream>
+using namespace std;
+ 
+int leedato()
+{
+    int n;
+cin>>n;
+return n;
+}
+int fibonacci(int n,int a,int b,int i)
+{
+    int c;
+ 
+    c=a+b;
+    if(c<=n)
+    {
+ 
+    cout<<c<<endl;
+    a=b; b=c;
+        return fibonacci(n,a,b,i+1);
+    }
+    else
+        return 0;
+}
+void pideCantidad()
+{
+ 
+    int n,i=0,a=1,b=1;
+    do
+    {
+    system("cls");
+    cout<<"Ingrese la cantidad de cadena para presentar: ";
+    n=leedato();
+    }while(n<3);
+    cout<<a<<endl;cout<<b<<endl;
+    fibonacci(n,a,b,i);
+ 
+}
+ 
+void main()
+{
+ 
+    pideCantidad();
+ 
+}

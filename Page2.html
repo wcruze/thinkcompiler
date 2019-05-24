@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/vis-network.min.css" />
+    <script src="js/vis.js"></script>
+    <script src="js/exampleUtil.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/Page2.js"></script>
+    <script src="js/java.js"></script>
+    <script src="js/c.js"></script>
+    <title>Compilar</title>
+</head>
+
+
+<body>
+
+
+    <!-- botones del lado izquierdo -->
+    <nav>
+        <a id="back"> <i class="fa fa-home"></i></a>
+        <a href=""></a><button id="example-modal--label" class="btn btn-success" data-toggle="modal" data-target="#example-modal"><span id="fa" class="fa fa-list-ol"></span></button></a>
+        <a href=""></a><button id="table2" class="show-modal open-modal"><span id="fa2" class="fa fa-ban"></span></button></a>
+
+        <a href=""></a><button id="semantico" class="show-modal2 open-modal"><span id="f2" class="fa fa-code"></span></button></a>
+
+        <a href=""></a><button id="table3"><span id="fa3" class="fa fa-globe"></span></button></a>
+        <a href=""></a><button id="table4"><span id="fa4" class="fa fa-refresh"></span></button></a>
+
+
+
+
+    </nav>
+
+    <!-- .modal 1 para lista de palabras reservadas-->
+
+    <div class="modal fade" role="dialog" aria-labelledby="example-modal--label" aria-hidden="true" id="example-modal" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close Modal</span></button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Palabras reservadas.</h4>
+                </header>
+                <div class="modal-body">
+                    <!-- tabla -->
+                    <table id="t1">
+                        <tr>
+                            <th>No</th>
+                            <th id="cc">Palabras Reservadas</th>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .modal 2 para lista de errores sintactico y lexicos-->
+
+    <div class="modal2">
+        <a class="close-modal2" href="#">X</a>
+        <div>
+
+            <table id="t2">
+                <tr>
+                    <th>No</th>
+                    <th id="cc">Tabla de errores</th>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+
+    <!-- .modal 2 para lista de errores semanticos-->
+    <div class="modal3">
+        <a class="close-modal3" href="#">X</a>
+        <div>
+
+            <table id="t3">
+                <tr>
+                    <th>No</th>
+                    <th id="cc">Tabla de errores sintactico</th>
+                </tr>
+            </table>
+
+
+        </div>
+    </div>
+
+
+    <!-- componentes del compilador -->
+    <div class="abs-center container">
+
+        <button id="run">Run</button>
+        <div id="espacio"> <br></div>
+        <div id="java"> Java </div>
+        <div id="c"> C++ </div>
+        <textarea placeholder="Enter code here..." class="rela-block input" id="area"></textarea>
+        <div class="rela-block output" id="out">Output here</div>
+    </div>
+
+    <!-- red  -->
+
+    <div id="network"></div>
+
+
+
+</body>
+
+</htm2
